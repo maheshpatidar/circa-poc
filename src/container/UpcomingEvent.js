@@ -1,6 +1,6 @@
-import AppText from 'components/AppText';
 import * as React from 'react';
-import {View, StyleSheet} from 'react-native';
+import AppText from 'components/AppText';
+import {StyleSheet, View} from 'react-native';
 import Colors from 'theme/colors';
 import {paymentDateFormatted} from 'utils/date-time-utils';
 

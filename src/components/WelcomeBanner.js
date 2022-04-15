@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import AppText from 'components/AppText';
-import Colors from 'theme/colors';
 import Button from 'components/Button';
 import Strings from 'locale';
+import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
+import Colors from 'theme/colors';
 
 const WelcomeBanner = ({onClose}) => {
   return (

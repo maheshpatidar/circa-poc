@@ -1,8 +1,8 @@
 import React from 'react';
-import {StyleSheet, View, TouchableOpacity} from 'react-native';
 import AppText from 'components/AppText';
-import Colors from 'theme/colors';
 import ModalWrapper from 'container/ModalWrapper';
+import {StyleSheet, TouchableOpacity, View} from 'react-native';
+import Colors from 'theme/colors';
 
 const LeaseDropDown = ({
   isVisible = false,

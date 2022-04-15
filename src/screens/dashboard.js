@@ -1,26 +1,26 @@
 import React, {useEffect, useState} from 'react';
-import WelcomeBanner from 'components/WelcomeBanner';
-import PageWrapper from 'container/PageWrapper';
-import {
-  View,
-  StyleSheet,
-  Image,
-  FlatList,
-  ScrollView,
-  TouchableOpacity,
-  LayoutAnimation,
-} from 'react-native';
-import Colors from 'theme/colors';
 import AppText from 'components/AppText';
 import Button from 'components/Button';
-import Strings from 'locale';
-import UpcomingEvent from 'container/UpcomingEvent';
-import PropertyItem from 'container/PropertyItem';
+import LeaseDropDown from 'components/LeaseDropDown';
+import WelcomeBanner from 'components/WelcomeBanner';
 import CommunityBoard from 'container/CommunityBoard';
+import PageWrapper from 'container/PageWrapper';
+import PropertyItem from 'container/PropertyItem';
+import UpcomingEvent from 'container/UpcomingEvent';
+import Strings from 'locale';
+import {
+  FlatList,
+  Image,
+  LayoutAnimation,
+  ScrollView,
+  StyleSheet,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchResidentData} from 'store/resident/actions';
 import {selectDashboardData} from 'store/resident/selectors';
-import LeaseDropDown from 'components/LeaseDropDown';
+import Colors from 'theme/colors';
 
 const Dashboard = () => {
   const dispatch = useDispatch();

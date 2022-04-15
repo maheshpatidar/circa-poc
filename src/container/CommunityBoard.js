@@ -1,6 +1,6 @@
-import AppText from 'components/AppText';
 import * as React from 'react';
-import {View, StyleSheet, Image} from 'react-native';
+import AppText from 'components/AppText';
+import {Image, StyleSheet, View} from 'react-native';
 import Colors from 'theme/colors';
 
 const PropertyManager = ({title, description, icon}) => {

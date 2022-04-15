@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PageWrapper from 'container/PageWrapper';
-import {View, StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import Colors from 'theme/colors';
 
 const DefaultScreen = () => {

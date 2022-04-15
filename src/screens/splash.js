@@ -1,5 +1,5 @@
 import React from 'react';
-import {StatusBar, Image, StyleSheet} from 'react-native';
+import {Image, StatusBar, StyleSheet} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Colors from 'theme/colors';
 

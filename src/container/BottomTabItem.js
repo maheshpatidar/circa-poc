@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, StyleSheet} from 'react-native';
+import {Image, StyleSheet, View} from 'react-native';
 import Colors from 'theme/colors';
 
 const BottomTabItem = ({icon, focused}) => {

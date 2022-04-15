@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, StyleSheet} from 'react-native';
+import {StyleSheet, Text} from 'react-native';
 
 const AppText = ({children, variant = 'p', color, style = {}}) => {
   const textColorStyle = color ? {color: color} : {};

@@ -1,8 +1,8 @@
+import * as React from 'react';
 import AppText from 'components/AppText';
 import Button from 'components/Button';
 import Strings from 'locale';
-import * as React from 'react';
-import {View, StyleSheet, Image} from 'react-native';
+import {Image, StyleSheet, View} from 'react-native';
 import Colors from 'theme/colors';
 
 const PropertyItem = ({name, location}) => {

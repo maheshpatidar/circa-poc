@@ -1,5 +1,5 @@
 import React from 'react';
-import {StatusBar, SafeAreaView} from 'react-native';
+import {SafeAreaView, StatusBar} from 'react-native';
 
 const PageWrapper = ({children, statusBarColor, pageColor}) => {
   const topAreaStyle = {

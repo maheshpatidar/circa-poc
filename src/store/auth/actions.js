@@ -1,5 +1,5 @@
-import {getAuthData, getAuthDataFailure, getAuthDataSuccess} from './slice';
 import {login} from './services';
+import {getAuthData, getAuthDataFailure, getAuthDataSuccess} from './slice';
 
 export const fetchLoginData = () => {
   return async dispatch => {

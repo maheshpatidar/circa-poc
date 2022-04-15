@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {useSelector} from 'react-redux';
+import React, {useEffect} from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+import {fetchLoginData} from 'store/auth/actions';
 import {selectAuth} from 'store/auth/selectors';
+
+import {NavigationContainer} from '@react-navigation/native';
+
 import BottomNavigation from './bottom-navigation';
 import SplashNavigation from './splash-navigation';
-import {fetchLoginData} from 'store/auth/actions';
-import {useDispatch} from 'react-redux';
 
 const RootNavigation = () => {
   const dispatch = useDispatch();

@@ -1,9 +1,10 @@
 import React from 'react';
-import Dashboard from 'screens/dashboard';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import BottomTabItem from 'container/BottomTabItem';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import Dashboard from 'screens/dashboard';
 import DefaultScreen from 'screens/default';
+
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
 

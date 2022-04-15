@@ -1,9 +1,9 @@
 import {combineReducers} from 'redux';
-import {configureStore} from '@reduxjs/toolkit';
-import {persistStore, persistReducer} from 'redux-persist';
 import {createLogger} from 'redux-logger';
 import thunk from 'redux-thunk';
 import reducers from 'store/slices';
+
+import {configureStore} from '@reduxjs/toolkit';
 
 const rootReducer = combineReducers({...reducers});
 

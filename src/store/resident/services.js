@@ -1,5 +1,5 @@
-import {endpoints} from 'store/urls';
 import AuthHeader from 'store/auth-header';
+import {endpoints} from 'store/urls';
 
 export const getResidents = () => {
   return fetch(endpoints.getResidents(), {
