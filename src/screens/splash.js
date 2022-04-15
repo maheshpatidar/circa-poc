@@ -1,5 +1,6 @@
 import React from 'react';
-import {Image, StatusBar, StyleSheet} from 'react-native';
+import {Image, StatusBar} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import LinearGradient from 'react-native-linear-gradient';
 import Colors from 'theme/colors';
 
@@ -16,7 +17,7 @@ const Splash = () => {
   );
 };
 
-const style = StyleSheet.create({
+const style = EStyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',

@@ -14,7 +14,7 @@ module.exports = {
           'error',
           {
             groups: [
-              ['^react$', '^[a-z]'],
+              ['^react$', '^react-native$', '^[a-z]'],
               ['^@'],
               ['^~'],
               ['^\\.\\.(?!/?$)', '^\\.\\./?$'],

@@ -1,8 +1,9 @@
 import React from 'react';
+import {Image, TouchableOpacity, View} from 'react-native';
 import AppText from 'components/AppText';
 import Button from 'components/Button';
 import Strings from 'locale';
-import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import Colors from 'theme/colors';
 
 const WelcomeBanner = ({onClose}) => {
@@ -38,7 +39,7 @@ const WelcomeBanner = ({onClose}) => {
   );
 };
 
-const style = StyleSheet.compose({
+const style = EStyleSheet.create({
   welcomeContainer: {
     backgroundColor: Colors.primary.periwinkle,
     paddingHorizontal: 16,

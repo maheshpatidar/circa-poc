@@ -1,5 +1,6 @@
 import React from 'react';
 import BottomTabItem from 'container/BottomTabItem';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Dashboard from 'screens/dashboard';
 import DefaultScreen from 'screens/default';
@@ -34,22 +35,12 @@ const BottomNavigation = () => {
       screenOptions={{
         headerShown: false,
         tabBarShowLabel: false,
-        tabBarStyle: {
-          position: 'relative',
-          height: insets.bottom + 70,
-          top: -12,
-          marginBottom: -12,
-          alignItems: 'center',
-          paddingHorizontal: 20,
-          shadowOffset: {width: 0, height: 0},
-          shadowColor: '#7090B0',
-          shadowOpacity: 0.2,
-          shadowRadius: 5,
-          elevation: 3,
-          zIndex: 0,
-          borderTopLeftRadius: 16,
-          borderTopRightRadius: 16,
-        },
+        tabBarStyle: [
+          styles.tabBarStyle,
+          {
+            height: insets.bottom + 70,
+          },
+        ],
       }}>
       {getTabScreen('Dashboard', Dashboard, homeIcon)}
       {getTabScreen('Plan', DefaultScreen, planIcon)}
@@ -59,5 +50,23 @@ const BottomNavigation = () => {
     </Tab.Navigator>
   );
 };
+
+const styles = EStyleSheet.create({
+  tabBarStyle: {
+    position: 'relative',
+    top: -12,
+    marginBottom: -12,
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    shadowOffset: {width: 0, height: 0},
+    shadowColor: '#7090B0',
+    shadowOpacity: 0.2,
+    shadowRadius: 5,
+    elevation: 3,
+    zIndex: 0,
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
+  },
+});
 
 export default BottomNavigation;

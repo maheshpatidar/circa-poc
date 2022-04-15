@@ -1,8 +1,9 @@
 import * as React from 'react';
+import {Image, View} from 'react-native';
 import AppText from 'components/AppText';
 import Button from 'components/Button';
 import Strings from 'locale';
-import {Image, StyleSheet, View} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import Colors from 'theme/colors';
 
 const PropertyItem = ({name, location}) => {
@@ -39,7 +40,7 @@ const PropertyItem = ({name, location}) => {
   );
 };
 
-const style = StyleSheet.create({
+const style = EStyleSheet.create({
   container: {
     flexDirection: 'row',
     backgroundColor: Colors.grayscale.white,

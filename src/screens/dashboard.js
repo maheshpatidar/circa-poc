@@ -1,4 +1,12 @@
 import React, {useEffect, useState} from 'react';
+import {
+  FlatList,
+  Image,
+  LayoutAnimation,
+  ScrollView,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import AppText from 'components/AppText';
 import Button from 'components/Button';
 import LeaseDropDown from 'components/LeaseDropDown';
@@ -8,15 +16,7 @@ import PageWrapper from 'container/PageWrapper';
 import PropertyItem from 'container/PropertyItem';
 import UpcomingEvent from 'container/UpcomingEvent';
 import Strings from 'locale';
-import {
-  FlatList,
-  Image,
-  LayoutAnimation,
-  ScrollView,
-  StyleSheet,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchResidentData} from 'store/resident/actions';
 import {selectDashboardData} from 'store/resident/selectors';
@@ -157,7 +157,7 @@ const Dashboard = () => {
   );
 };
 
-const style = StyleSheet.create({
+const style = EStyleSheet.create({
   pageContainer: {
     flex: 1,
     backgroundColor: Colors.grayscale.white,

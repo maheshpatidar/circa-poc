@@ -1,7 +1,8 @@
 import React from 'react';
+import {TouchableOpacity, View} from 'react-native';
 import AppText from 'components/AppText';
 import ModalWrapper from 'container/ModalWrapper';
-import {StyleSheet, TouchableOpacity, View} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import Colors from 'theme/colors';
 
 const LeaseDropDown = ({
@@ -38,7 +39,7 @@ const LeaseDropDown = ({
   );
 };
 
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
   optionContainer: {
     padding: 20,
     alignItems: 'center',

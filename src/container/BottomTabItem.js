@@ -1,5 +1,6 @@
 import React from 'react';
-import {Image, StyleSheet, View} from 'react-native';
+import {Image, View} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import Colors from 'theme/colors';
 
 const BottomTabItem = ({icon, focused}) => {
@@ -17,7 +18,7 @@ const BottomTabItem = ({icon, focused}) => {
   );
 };
 
-const style = StyleSheet.create({
+const style = EStyleSheet.create({
   container: {
     width: 44,
     height: 44,

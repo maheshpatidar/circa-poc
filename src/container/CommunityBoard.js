@@ -1,6 +1,7 @@
 import * as React from 'react';
+import {Image, View} from 'react-native';
 import AppText from 'components/AppText';
-import {Image, StyleSheet, View} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import Colors from 'theme/colors';
 
 const PropertyManager = ({title, description, icon}) => {
@@ -26,7 +27,7 @@ const PropertyManager = ({title, description, icon}) => {
   );
 };
 
-const style = StyleSheet.create({
+const style = EStyleSheet.create({
   container: {
     flexDirection: 'row',
     backgroundColor: Colors.grayscale.white,

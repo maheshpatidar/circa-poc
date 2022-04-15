@@ -1,6 +1,7 @@
 import * as React from 'react';
+import {View} from 'react-native';
 import PageWrapper from 'container/PageWrapper';
-import {StyleSheet, View} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import Colors from 'theme/colors';
 
 const DefaultScreen = () => {
@@ -13,7 +14,7 @@ const DefaultScreen = () => {
   );
 };
 
-const style = StyleSheet.create({
+const style = EStyleSheet.create({
   pageContainer: {
     flex: 1,
     backgroundColor: Colors.grayscale.white,

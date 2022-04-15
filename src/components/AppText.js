@@ -1,5 +1,6 @@
 import React from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {Text} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 
 const AppText = ({children, variant = 'p', color, style = {}}) => {
   const textColorStyle = color ? {color: color} : {};
@@ -9,7 +10,7 @@ const AppText = ({children, variant = 'p', color, style = {}}) => {
   return <Text style={textStyle}>{children}</Text>;
 };
 
-const localStyle = StyleSheet.compose({
+const localStyle = EStyleSheet.create({
   billboard: {
     fontSize: 40,
     lineHeight: 48,

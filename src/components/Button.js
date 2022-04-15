@@ -1,5 +1,6 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import Colors from 'theme/colors';
 
 const Button = ({
@@ -20,7 +21,7 @@ const Button = ({
   );
 };
 
-const localStyle = StyleSheet.compose({
+const localStyle = EStyleSheet.create({
   outline: {
     fontSize: 10,
     lineHeight: 16,
