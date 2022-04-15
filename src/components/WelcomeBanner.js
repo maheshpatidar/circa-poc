@@ -20,7 +20,7 @@ const WelcomeBanner = ({onClose}) => {
             {Strings.dashboard.welcome_description}
           </AppText>
         </View>
-        <TouchableOpacity onPress={onClose}>
+        <TouchableOpacity onPress={onClose} style={style.closeContainer}>
           <Image
             source={require('assets/icons/close.png')}
             style={style.close}
@@ -56,6 +56,13 @@ const style = StyleSheet.compose({
   },
   description: {
     marginTop: 16,
+  },
+  closeContainer: {
+    alignSelf: 'flex-start',
+    width: 40,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   close: {
     width: 20,
