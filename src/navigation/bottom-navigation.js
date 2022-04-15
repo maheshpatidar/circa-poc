@@ -34,7 +34,10 @@ const BottomNavigation = () => {
         headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: {
+          position: 'relative',
           height: insets.bottom + 70,
+          top: -12,
+          marginBottom: -12,
           alignItems: 'center',
           paddingHorizontal: 20,
           shadowOffset: {width: 0, height: 0},

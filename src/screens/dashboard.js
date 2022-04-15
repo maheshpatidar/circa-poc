@@ -117,7 +117,9 @@ const Dashboard = () => {
             />
           </View>
           <View style={style.subPageContainer}>
-            <ScrollView showsVerticalScrollIndicator={false}>
+            <ScrollView
+              showsVerticalScrollIndicator={false}
+              contentContainerStyle={style.scrollViewContainer}>
               <AppText
                 variant="h3"
                 style={style.titleStyle}
@@ -202,6 +204,9 @@ const style = StyleSheet.create({
     top: -110,
     flex: 1,
     marginBottom: -110,
+  },
+  scrollViewContainer: {
+    paddingBottom: 30,
   },
   titleStyle: {
     marginTop: 24,
